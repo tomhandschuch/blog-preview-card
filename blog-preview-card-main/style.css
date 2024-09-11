@@ -1,0 +1,80 @@
+*,
+*:before,:after {
+    box-sizing: border-box;
+}
+
+:root {
+--clr-yellow: hsl(47, 88%, 63%);
+--clr-white: hsl(0, 0%, 100%);
+--clr-gray-500: hsl(0, 0%, 42%);
+--clr-gray-950: hsl(0, 0%, 7%);
+}
+
+@font-face {
+    font-family: "Figtree";
+    src: url(assets/fonts/static/Figtree-ExtraBold.ttf);
+}
+
+html {
+    font-family: "Figtree";
+}
+
+body {
+    background-color: var(--clr-yellow);
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: var(--clr-white);
+    width: 375px;
+    padding: 1rem; 
+    border: 2px solid black;
+    border-radius: 1rem;
+    position: relative;
+}
+
+svg {
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--clr-gray-950);
+    font-size: 20px;
+}
+
+a:hover {
+    color: var(--clr-yellow);
+}
+
+aside {
+    background-color: var(--clr-yellow);
+    margin-top: 2rem;
+    padding: 0.4rem;
+}
+
+.profile-picture {
+    width: 2rem;
+    height: 2rem;
+}
+
+.picture-name {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.text {
+    color: var(--clr-gray-500);
+}
+
+.date {
+    color: var(--clr-gray-500);
+}
+
